@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEXSNOW | Defense & Technology</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #f2f2f2;
+    }
+    header {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a, select {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, button {
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0077ff;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="dw.jpg" alt="TEXSNOW Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><select id="langSwitch"><option value="en">EN</option><option value="si">සිං</option></select></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 data-en="TEXSNOW" data-si="ටෙක්ස්නෝ">TEXSNOW</h1>
+    <p data-en="We are a rising force in defense and technological innovation. From cutting-edge firearm replicas like BB Guns and Air Rifles to battlefield-style Airsoft arenas, and high-end computer parts and electronics — TEXSNOW powers the future." data-si="ආරක්ෂක හා තාක්ෂණ නවෝත්පාදන ක්ෂේත්‍රයේ උසස්ම තාක්ෂණය සහ උපකරණ ලබාදීමේ නව ආරම්භයකි. TEXSNOW සමඟින් ඔබට ලැබෙනුයේ Airsoft, BB Guns සහ උසස් පරිගණක කොටස් වැනි නිෂ්පාදන වේ.">
+      We are a rising force in defense and technological innovation. From cutting-edge firearm replicas like BB Guns and Air Rifles to battlefield-style Airsoft arenas, and high-end computer parts and electronics — TEXSNOW powers the future.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2 data-en="About Us" data-si="අප ගැන">About Us</h2>
+    <p data-en="TEXSNOW was founded with a vision to revolutionize multiple defense-related and tech sectors in Sri Lanka and beyond. With trusted quality and innovation, we deliver reliable gear and electronics for professionals and enthusiasts alike."
+       data-si="TEXSNOW ආරම්භ වූයේ ශ්‍රී ලංකාවේ සහ විදේශයේ ආරක්ෂක සහ තාක්ෂණ ක්ෂේත්‍රයේ විප්ලවයක් ඇති කිරීමේ දැක්මක් සමඟ ය. විශ්වාසවන්ත තත්ත්වය සහ නව්‍යත්වය අපගේ බලාපොරොත්තුවයි.">
+      TEXSNOW was founded with a vision to revolutionize multiple defense-related and tech sectors in Sri Lanka and beyond. With trusted quality and innovation, we deliver reliable gear and electronics for professionals and enthusiasts alike.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2 data-en="Products" data-si="නිෂ්පාදන">Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="img/bbgun.jpg" alt="BB Gun">
+        <h3 data-en="BB Gun M92 Replica" data-si="BB ගන් M92 ආකාරය">BB Gun M92 Replica</h3>
+        <p data-en="High-quality gas-powered airsoft replica." data-si="උසස් තත්ත්වයේ ගෑස් බලයෙන් ක්‍රියාත්මක වන ආයුධ ආකාරයකි.">High-quality gas-powered airsoft replica.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2 data-en="News & Updates" data-si="ප්‍රවෘත්ති සහ යාවත්කාලීන">News & Updates</h2>
+    <p data-en="No news yet. Stay tuned for updates on new tech, events, and product launches."
+       data-si="ප්‍රවෘත්ති කිසිවක් නොමැත. නව නිෂ්පාදන සහ තාක්ෂණික යාවත්කාලීන සඳහා අධික්ෂණය වී සිටින්න.">
+      No news yet. Stay tuned for updates on new tech, events, and product launches.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2 data-en="Contact Us" data-si="අපව සම්බන්ධ කරගන්න">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TEXSNOW. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const langSwitch = document.getElementById('langSwitch');
+    langSwitch.addEventListener('change', () => {
+      const lang = langSwitch.value;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    });
+  </script>
+</body>
+</html>
